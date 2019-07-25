@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Vanilla JavaScript</title>
+    <script src="https://kit.fontawesome.com/d457faf8c6.js"></script>
+    <link rel="stylesheet" href="https://bootswatch.com/4/united/bootstrap.min.css">
+    <style>
+    body{
+    background: #355C7D;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #C06C84, #6C5B7B, #355C7D);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #C06C84, #6C5B7B, #355C7D); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    }
+    </style>
+</head>
+<body>
+    <div class="container text-center">
+        <h1 class='display-4 pb-5'>
+            <i class='fas fa-gamepad text-info'></i>
+            My<span class='text-info'>Game</span>List
+        </h1>
+
+    <form id='game-form'>
+        <div class="form-group">
+            <label for="title">Title:</label>
+            <input type="text" id="title" class="form-control" placeholder="e.g. Grand Theft Auto 5">
+        </div>
+        
+        <div class="form-group">
+            <label for="publisher">Publisher:</label>
+            <input type="text" id='publisher' class="form-control" placeholder="e.g. EA Sports">
+        </div>
+
+        <div class="form-group">
+            <label for="price">Price:</label>
+            <input type="text" id="price" class="form-control" placeholder="e.g. 59.99">
+        </div>
+        <br/>
+        <input type="submit" id="submit" value='Add Game' class="btn btn-lg btn-success">
+    </form>
+    <br>
+    <table class="table table-striped mt-5">
+        <thead>
+            <tr>
+                <th>Title</th>
+                <th>Publisher</th>
+                <th>Price</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody id="game-list"></tbody>
+    </table>
+    </div>
+
+    <script src="/app.js"></script>
+</body>
+</html>
